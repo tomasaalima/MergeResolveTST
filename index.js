@@ -7,7 +7,7 @@ const port = 3000;
 const server = createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World'); // Original response
+  res.end('A request has been received'); // Change message
 });
 
 server.listen(port, hostname, () => {
